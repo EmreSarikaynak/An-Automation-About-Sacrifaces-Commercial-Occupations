@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AABDBF2B-C07E-408F-B573-0496B2CDB0A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KurbanYazilimi</RootNamespace>
+    <AssemblyName>KurbanYazilimi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\MS-VS\KurbanYazilimi\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>784DB1DBF0AE862393B5E76506A0993F53E22C0B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KurbanYazilimi_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fonksiyon.cs" />
+    <Compile Include="FormKurbanDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKurbanDegistir.Designer.cs">
+      <DependentUpon>FormKurbanDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKurbanEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKurbanEkleme.Designer.cs">
+      <DependentUpon>FormKurbanEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriSil.Designer.cs">
+      <DependentUpon>FormMusteriSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYeniOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniOdeme.Designer.cs">
+      <DependentUpon>FormYeniOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim.Designer.cs">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurbanSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurbanSil.Designer.cs">
+      <DependentUpon>KurbanSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurbanTipleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurbanTipleri.Designer.cs">
+      <DependentUpon>KurbanTipleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurumBilgileriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurumBilgileriGiris.Designer.cs">
+      <DependentUpon>KurumBilgileriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKisiselBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKisiselBilgiDuzenle.Designer.cs">
+      <DependentUpon>FormKisiselBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListesi.Designer.cs">
+      <DependentUpon>MusteriListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeIptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeIptal.Designer.cs">
+      <DependentUpon>OdemeIptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLisans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineLisans.Designer.cs">
+      <DependentUpon>OnlineLisans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.Designer.cs">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teknik.Designer.cs">
+      <DependentUpon>Teknik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKayit.Designer.cs">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKurbanDegistir.resx">
+      <DependentUpon>FormKurbanDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKurbanEkleme.resx">
+      <DependentUpon>FormKurbanEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriSil.resx">
+      <DependentUpon>FormMusteriSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeniOdeme.resx">
+      <DependentUpon>FormYeniOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim.resx">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurbanSil.resx">
+      <DependentUpon>KurbanSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurbanTipleri.resx">
+      <DependentUpon>KurbanTipleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurumBilgileriGiris.resx">
+      <DependentUpon>KurumBilgileriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKisiselBilgiDuzenle.resx">
+      <DependentUpon>FormKisiselBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListesi.resx">
+      <DependentUpon>MusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeIptal.resx">
+      <DependentUpon>OdemeIptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineLisans.resx">
+      <DependentUpon>OnlineLisans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SifreDegistir.resx">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teknik.resx">
+      <DependentUpon>Teknik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKayit.resx">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\images.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\stock-vector-login-icon-button-blue-glossy-with-shadow-vector-illustration-45529618.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
